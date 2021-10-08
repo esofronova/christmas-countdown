@@ -1,0 +1,36 @@
+.christmas-countdown {
+   background: url("./christmas.jpg") no-repeat center;
+
+   .header {
+      font-size: 3em;
+      letter-spacing: 10px;
+      text-shadow: 3px 4px 3px #222;
+      font-weight: normal;
+   }
+
+   .circles {
+      max-width: 1000px;
+
+      .circle {
+         width: 150px;
+         height: 150px;
+         background: rgba(256, 256, 256, 0.2);
+   
+         * { font-weight: bold; }
+      }
+   }
+
+   .snow {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      .snowflake {
+         background-color: rgba(256, 256, 256, 0.7);
+         width: 3px;
+         height: 3px;
+         z-index: 1000;
+      }
+   }
+}
