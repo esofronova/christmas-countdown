@@ -1,5 +1,5 @@
 .christmas-countdown {
-   background: url("./christmas.jpg") no-repeat center;
+   background: url("./christmas.jpg") no-repeat center/cover fixed;
 
    .header {
       font-size: 3em;
@@ -15,16 +15,31 @@
          width: 150px;
          height: 150px;
          background: rgba(256, 256, 256, 0.2);
-   
-         * { font-weight: bold; }
+
+         h1, h5 { font-weight: bold; }
+
+         @media screen and (max-width: 992px) {
+            width: 100px;
+            height: 100px;
+ 
+            h1 { font-size: 1.8em; }
+            h5 { font-size: 1.1em; }
+         }
+
+         @media screen and (max-width: 576px) {
+            width: 80px;
+            height: 80px;
+
+            h1, h5 { font-weight: normal; }
+            h1 { font-size: 1.8em; }
+            h5 { font-size: 0.8em; }
+         }
       }
    }
 
    .snow {
       top: 0;
       left: 0;
-      right: 0;
-      bottom: 0;
 
       .snowflake {
          background-color: rgba(256, 256, 256, 0.7);
