@@ -1,4 +1,4 @@
-A simple calculator.
+A counter that shows how many days are left until Christmas
 
 The App was built with React and Bootstrap 5.
 
