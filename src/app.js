@@ -6,7 +6,7 @@ export default function ChristmasCountdown() {
 
    const numberOfSnowflakes = Array.from({ length: 500 }, (k, i) => i++);
 
-   const christmasDate = new Date("Dec 25, 2021 00:00:00").getTime();
+   const christmasDate = new Date(`Dec 25, ${new Date().getFullYear()} 00:00:00`).getTime();
    let [today, setToday] = useState(new Date().getTime());
 
    useEffect(() => {
